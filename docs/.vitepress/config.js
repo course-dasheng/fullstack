@@ -15,6 +15,8 @@ export default {
       { text: 'Vue', link: '/vue/' },
       { text: 'React', link: '/react/' },
       { text: 'Nodejs', link: '/node/' },
+      { text: '前端源码漫游记', link: 'https://fesource.netlify.app/' },
+
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/course-dasheng/fullstack' },
@@ -107,6 +109,12 @@ export default {
             { text: 'Nodejs介绍', link: '/node/' },
           ],
         },
+        {
+          text:'其他',
+          items:[
+            {text:'repo推荐',link:'/repo'}
+          ]
+        }
       ],
     },
   }
