@@ -41,28 +41,7 @@ export default {
     sidebar: {
       '/': [
         {
-          text: '项目需求',
-          items: [
-            { text: '需求介绍', link: '/project/' },
-            { text: '项目通用技能', link: '/project/basic' },
-            { text: 'Javascript增强', link: '/project/javascript' },
-            { text: 'Typescript', link: '/project/typescript' },
-            { text: 'CSS 解决方案', link: '/project/css' },
-            { text: '前端工程化', link: '/project/fis' },
-            { text: 'Vite进阶', link: '/project/vite' },
-            { text: '组件设计', link: '/project/component' },
-            { text: '大文件上传', link: '/project/upload' },
-            { text: '数据大屏', link: '/project/chart' },
-            { text: '一万数据量渲染优化', link: '/project/visual-list' },
-            { text: '性能优化', link: '/project/perf' },
-            { text: '前端监控', link: '/project/monitor' },
-            { text: '图标', link: '/project/icon' },
-            { text: '国际化(非必选)', link: '/project/i18n' },
-            { text: '问题汇总', link: '/project/ques' },
-          ],
-        },
-        {
-          text: 'Vue',
+          text: 'Vue3',
           items: [
             { text: 'Vue3 框架介绍', link: '/vue/' },
             { text: 'Vue3 官网阅读', link: '/vue/website' },
@@ -78,7 +57,7 @@ export default {
           ],
         },
         {
-          text: 'Vue组件库开发与实现',
+          text: 'Vue3 组件库开发与实现',
           items: [
             { text: '组件库开发注意事项', link: '/element3/' },
             { text: '文档', link: '/element3/docs/' },
@@ -86,7 +65,7 @@ export default {
           ],
         },
         {
-          text: 'React',
+          text: 'React 18',
           items: [
             { text: 'React18 框架介绍', link: '/react/' },
             { text: 'React 官网阅读', link: '/react/website' },
@@ -108,6 +87,28 @@ export default {
             { text: '文档', link: '/umaso/docs' },
           ],
         },
+        {
+          text: '项目需求',
+          items: [
+            { text: '需求介绍', link: '/project/' },
+            { text: '项目通用技能', link: '/project/basic' },
+            { text: 'Javascript增强', link: '/project/javascript' },
+            { text: 'Typescript', link: '/project/typescript' },
+            { text: 'CSS 解决方案', link: '/project/css' },
+            { text: '前端工程化', link: '/project/fis' },
+            { text: 'Vite进阶', link: '/project/vite' },
+            { text: '组件设计', link: '/project/component' },
+            { text: '大文件上传', link: '/project/upload' },
+            { text: '数据大屏', link: '/project/chart' },
+            { text: '一万数据量渲染优化', link: '/project/visual-list' },
+            { text: '性能优化', link: '/project/perf' },
+            { text: '前端监控', link: '/project/monitor' },
+            { text: '图标', link: '/project/icon' },
+            { text: '国际化(非必选)', link: '/project/i18n' },
+            { text: '问题汇总', link: '/project/ques' },
+          ],
+        },
+
         {
           text: 'Nodejs',
           items: [{ text: 'Nodejs介绍', link: '/node/' }],

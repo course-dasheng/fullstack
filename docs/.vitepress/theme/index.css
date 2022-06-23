@@ -7,3 +7,13 @@ iframe{
   width:100%;
   border:none;
 }
+
+.cluster rect {
+  /* fill: #65b687 !important; */
+  stroke: #aaaa33;
+  stroke-width: 1px;
+}
+
+.content-container{
+  max-width: 788px !important;
+}
