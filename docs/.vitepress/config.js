@@ -1,12 +1,30 @@
-
+import MermaidPlugin from 'vitepress-plugin-mermaid'
 export default {
   title: '项目实战课',
   description: '全栈应用如何做出亮点',
   head: [
-    ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/shengxinjing/static/element3.ico', type: 'image/svg+xml' }],
-    ['link', { rel: 'alternate icon', href: 'https://cdn.jsdelivr.net/gh/shengxinjing/static/element3.png', type: 'image/png', sizes: '16x16' }],
-    []
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: 'https://cdn.jsdelivr.net/gh/shengxinjing/static/element3.ico',
+        type: 'image/svg+xml',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'alternate icon',
+        href: 'https://cdn.jsdelivr.net/gh/shengxinjing/static/element3.png',
+        type: 'image/png',
+        sizes: '16x16',
+      },
+    ],
+    [],
   ],
+  markdown: {
+    config: MermaidPlugin,
+  },
   // base:"/src/"
   themeConfig: {
     logo: 'https://cdn.jsdelivr.net/gh/shengxinjing/static/woniu.png',
@@ -16,7 +34,6 @@ export default {
       { text: 'React', link: '/react/' },
       { text: 'Nodejs', link: '/node/' },
       { text: '前端源码漫游记', link: 'https://fesource.netlify.app/' },
-
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/course-dasheng/fullstack' },
@@ -100,22 +117,17 @@ export default {
           items: [
             { text: 'React', link: '/umaso/' },
             { text: '文档', link: '/umaso/docs' },
-
           ],
         },
         {
           text: 'Nodejs',
-          items: [
-            { text: 'Nodejs介绍', link: '/node/' },
-          ],
+          items: [{ text: 'Nodejs介绍', link: '/node/' }],
         },
         {
-          text:'其他',
-          items:[
-            {text:'repo推荐',link:'/repo'}
-          ]
-        }
+          text: '其他',
+          items: [{ text: 'repo推荐', link: '/repo' }],
+        },
       ],
     },
-  }
+  },
 }
