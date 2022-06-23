@@ -1,3 +1,5 @@
+https://zhuanlan.zhihu.com/p/166668789
+
 ```mermaid
 sequenceDiagram
     participant John
@@ -29,6 +31,24 @@ Bob-->>John: Jolly good!
 
 ```mermaid
 graph TD
+	A[矩形] --> B(圆角) --> C{菱形}
+	D([This is the text in the box]) --> E[[带边框的矩形]] --> F[\平行四边形\]
+	G{{六边形}} --> H((圆形)) --> I[/平行四边形/]
+	J>非对称图形] --> K[/梯形\] --> L[\梯形/]
+	M[(圆柱形)]
+```
+```mermaid
+graph LR
+	A --> B
+	B ---|text| C
+	D -.- E
+	E -.text.-F
+	G ==> H
+```
+
+
+```mermaid
+graph TD
     A[Start] --> B{Is it?};
     B -->|Yes| C[OK];
     C --> D[Rethink];
@@ -36,6 +56,22 @@ graph TD
     B ---->|No| E[End];
 ```
 
+子图
+
+```mermaid
+graph TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+
+```
 
 ---
 
