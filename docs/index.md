@@ -14,8 +14,8 @@ hero:
     alt: work
   actions:
     - theme: brand
-      text: 开始
-      link: /basic/
+      text: 项目亮点
+      link: /project/
     - theme: alt
       text: Vue
       link: /vue/
