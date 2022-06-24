@@ -41,7 +41,7 @@ export default {
     sidebar: {
       '/': [
         {
-          text: 'Vue3',
+          text: 'Vue3 企业级实战',
           items: [
             { text: 'Vue3 框架介绍', link: '/vue/' },
             { text: 'Vue3 官网阅读', link: '/vue/website' },

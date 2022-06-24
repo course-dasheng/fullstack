@@ -17,3 +17,6 @@ iframe{
 .content-container{
   max-width: 788px !important;
 }
+.vp-doc h2{
+  margin-top:10px;
+}
