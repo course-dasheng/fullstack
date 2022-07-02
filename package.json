@@ -6,15 +6,22 @@
   "scripts": {
     "docs": "vitepress dev docs --port 8080",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "ppt": "slidev slides.md"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@slidev/cli": "^0.34.1",
+    "@slidev/theme-default": "^0.21.2",
+    "@slidev/theme-seriph": "^0.21.2",
     "mermaid": "^9.1.2",
     "vitepress": "1.0.0-alpha.2",
     "vitepress-plugin-mermaid": "^1.0.1",
     "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "slidev-theme-dasheng": "^0.0.1"
   }
 }
