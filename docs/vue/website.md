@@ -4,7 +4,7 @@
 
 https://sfc.vuejs.org/
 
-## 起步
+## 简介
 
 `declarative`  声明式 , 就像打车的时候我们跟司机打个说目的地，中间怎么走交给自动的导航（响应式，组件化，虚拟dom）
 
@@ -134,7 +134,10 @@ input.addEventListener('input',function(){
 ```
 
 [Single-File Components](https://sfc.vuejs.org/)
+build-tool-enabled  构建工具，像webpack vite等等环境
+构建工具就像是化妆品+好看的衣服，我们出门前包装一下，更精致 
 
+不用构建工具，就是家里啥样直接出门，所见即所得，简单粗暴
 
 `Progressive` 渐进式，
 就像一个英雄，能打辅助，能打野，也能打上单，Vue可以直接在浏览器里引入就开发，也可以配合构建工具和全家桶开发复杂项目 ,可以逐步增强
@@ -143,10 +146,12 @@ input.addEventListener('input',function(){
 `Compositon ` 和 `Option`的区别
 函数式写法 VS 对象式写法
 
-
+::: tip 体验一下
+:::
 
 `Component` 组件化
 
 
+## 快速开始
 
 
