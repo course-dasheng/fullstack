@@ -6,7 +6,7 @@
 
 [老版官网](https://reactjs.org/)
 
-[react-router](hhttps://reactrouter.com/docs/en/v6)
+[react-router](https://reactrouter.com/docs/en/v6)
 
 [在线体验](https://stackblitz.com/edit/react-g63haq?file=src%2FApp.js)
 

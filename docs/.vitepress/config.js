@@ -92,6 +92,8 @@ export default {
           items: [
             { text: '需求介绍', link: '/project/' },
             { text: '项目通用技能', link: '/project/basic' },
+            { text: 'ESint代码规范', link: '/project/eslint' },
+            { text: 'Git团队规范', link: '/project/git' },
             { text: 'Javascript增强', link: '/project/javascript' },
             { text: 'Typescript', link: '/project/typescript' },
             { text: 'CSS 解决方案', link: '/project/css' },
