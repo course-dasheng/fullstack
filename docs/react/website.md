@@ -23,7 +23,7 @@
 
 `imperative` 和 `declarative`
 
-
+`class component`和`function + hooks`
 ## 快速开始
 
 ## JSX
