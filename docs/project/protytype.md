@@ -122,7 +122,7 @@ console.log(cleanJSON.stringify({name:'Illl'}))  // '{"name":"llll"}'
 node中也可以通过vm模块创建一个沙箱来运行代码，[教程可以看这里](https://zhuanlan.zhihu.com/p/106503378)，不过这对我们代码的入侵性太大了，适用于发现bug后的调试某段具体的代码，并且没法再浏览器里直接用
 
 ```js
-import vm from 'vm'
+const vm = require('vm')
 
 const _stringify = JSON.stringify
 JSON.stringify = function stringify(...args) {
