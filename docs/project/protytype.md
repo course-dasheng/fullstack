@@ -271,7 +271,7 @@ global.checkNative = function (reset=false){
 我们测试一下代码，可以看到checkNative传递reset是true后，打印且重置了我们污染的函数，JSON.stringify的行为也符合我们的预期
 
 ```html
-<script src="./check-native.js"></script>
+<script src="./anti-evil.js"></script>
 <script src="./evil.js"></script>
 <script>
 function isNative(fn){
@@ -299,6 +299,6 @@ console.log('checkNative重置了',JSON.stringify(obj))
 
 好像没啥总结得了，祝大家天天开心，做一个开心的程序员，回见
 
-[代码在Github](https://github.com/course-dasheng/check-native/tree/main)
+[代码在Github](https://github.com/course-dasheng/anti-evil)
 
 [在线环境在StackBlitz](https://stackblitz.com/edit/web-platform-72jjnl?devToolsHeight=80&file=index.html)

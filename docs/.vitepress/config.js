@@ -64,34 +64,34 @@ export default {
           ],
         },
 
-        // {
-        //   text: 'Vue3 企业级实战',
-        //   items: [
-        //     { text: 'Vue3 框架介绍', link: '/vue/' },
-        //     { text: 'Vue3 官网阅读', link: '/wvue/website' },
-        //     { text: 'Vue 全家桶选型', link: '/vue/select' },
-        //     { text: 'Vue 权限系统', link: '/vue/auth' },
-        //     { text: '增删改查', link: '/vue/crud' },
-        //     { text: 'Vue 项目组件封装', link: '/vue/component' },
-        //     { text: 'Vue 性能优化', link: '/vue/perf' },
-        //     { text: '构建和部署', link: '/react/build' },
-        //     { text: '补充: Nuxt3和服务端渲染¡', link: '/vue/auth' },
-        //   ],
-        // },
-        // {
-        //   text: 'Element3 组件库开发与实现',
-        //   items: [
-        //     { text: '组件库开发注意事项', link: '/element3/' },
-        //     { text: 'Vue中的JSX', link: '/element3/jsx' },
-        //     { text: '通用组件', link: '/element3/common' },
-        //     { text: '布局组件', link: '/element3/layout' },
-        //     { text: '表单组件', link: '/element3/form' },
-        //     { text: '弹窗组件', link: '/element3/modal' },
-        //     { text: '树组件', link: '/element3/tree' },
-        //     { text: '表格组件', link: '/element3/table' },
-        //     { text: '其他组件', link: '/element3/other' },
-        //   ],
-        // },
+        {
+          text: 'Vue3 企业级实战',
+          items: [
+            { text: 'Vue3 框架介绍', link: '/vue/' },
+            { text: 'Vue3 官网阅读', link: '/wvue/website' },
+            { text: 'Vue 全家桶选型', link: '/vue/select' },
+            { text: 'Vue 权限系统', link: '/vue/auth' },
+            { text: '增删改查', link: '/vue/crud' },
+            { text: 'Vue 项目组件封装', link: '/vue/component' },
+            { text: 'Vue 性能优化', link: '/vue/perf' },
+            { text: '构建和部署', link: '/react/build' },
+            { text: '补充: Nuxt3和服务端渲染¡', link: '/vue/auth' },
+          ],
+        },
+        {
+          text: 'Element3 组件库开发与实现',
+          items: [
+            { text: '组件库开发注意事项', link: '/element3/' },
+            { text: 'Vue中的JSX', link: '/element3/jsx' },
+            { text: '通用组件', link: '/element3/common' },
+            { text: '布局组件', link: '/element3/layout' },
+            { text: '表单组件', link: '/element3/form' },
+            { text: '弹窗组件', link: '/element3/modal' },
+            { text: '树组件', link: '/element3/tree' },
+            { text: '表格组件', link: '/element3/table' },
+            { text: '其他组件', link: '/element3/other' },
+          ],
+        },
 
         {
           text: 'React 18',
