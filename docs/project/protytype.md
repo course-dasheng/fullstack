@@ -301,4 +301,4 @@ console.log('checkNative重置了',JSON.stringify(obj))
 
 [代码在Github](https://github.com/course-dasheng/check-native/tree/main)
 
-[在线环境在StackBlitz](https://stackblitz.com/edit/web-platform-72jjnl?devToolsHeight=60&file=index.html)
+[在线环境在StackBlitz](https://stackblitz.com/edit/web-platform-72jjnl?devToolsHeight=80&file=index.html)
