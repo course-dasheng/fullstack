@@ -18,20 +18,24 @@
 
 
 ```js
-const _stringify = JSON.stringify
-JSON.stringify = function stringify(...args) {
-  return _stringify(...args).replace(/I/g, 'l')
+function isEvilTime(){
+  return new Date().getDay() === 0 && Math.random() < 0.1 
 }
-console.log(JSON.stringify({name:'Ill'})) // {"name":"lll"}
-
 const _then = Promise.prototype.then
 Promise.prototype.then = function then(...args) {
-  if (new Date().getDay() === 0 && Math.random() < 0.1  ) {
+  if (isEvilTime()) {
     return
   } else {
     _then.call(this, ...args)
   }
 }
+
+const _stringify = JSON.stringify
+JSON.stringify = function stringify(...args) {
+  return _stringify(...args).replace(/I/g, 'l') 
+}
+console.log(JSON.stringify({name:'Ill'})) // {"name":"lll"}
+
 
 ```
 
@@ -44,11 +48,6 @@ Promise.prototype.then = function then(...args) {
 我们可以简单粗暴的检查函数的toString
 
 ```js
-const _stringify = JSON.stringify
-JSON.stringify = function stringify(...args) {
-  return _stringify(...args).replace(/I/g, 'l')
-}
-
 function isNative(fn){
   return fn.toString() === `function ${fn.name}() { [native code] }`
 }
@@ -62,10 +61,7 @@ console.log(isNative(JSON.stringify)) // false
 
 ```js
 
-const _stringify = JSON.stringify
-let myStringify = JSON.stringify = function stringify(...args) {
-  return _stringify(...args).replace(/I/g, 'l')
-}
+JSON.stringify = ...
 JSON.stringify.toString = function(){
   return `function stringify() { [native code] }`
 }
@@ -93,9 +89,6 @@ console.log(cleanJSON.stringify({name:'Illl'}))  // '{"name":"Illl"}'
 const _stringify = JSON.stringify
 let myStringify = JSON.stringify = function stringify(...args) {
   return _stringify(...args).replace(/I/g, 'l')
-}
-JSON.stringify.toString = function(){
-  return `function stringify() { [native code] }`
 }
 
 // 注入
@@ -301,7 +294,7 @@ console.log('checkNative重置了',JSON.stringify(obj))
 </script>
 ```
 ![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-19-46.png)
-
+![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-20-11-22.png)
 ## 总结
 
 好像没啥总结得了，祝大家天天开心，做一个开心的程序员，回见
