@@ -75,7 +75,7 @@ function isNative(fn){
 console.log(isNative(JSON.stringify)) // true
 ```
 
-## iframe && vm
+## iframe 
 
 我们还可以在浏览器里通过iframe创建一个被隔离的window, iframe被加载到body后，获取iframe内部的contentWindow
 
