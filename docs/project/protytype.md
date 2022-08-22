@@ -1,4 +1,4 @@
-# 原型链污染
+# 原型链污染 Evil.js 怎么检测
 
 最近`Evil.js`被讨论的很多，项目介绍如下
 ![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-17-24.png)
@@ -9,12 +9,11 @@
 
 今天我们来讨论一下，如果你作为项目的负责人，如何甄别这种代码下毒
 
-[欢迎加入前端学习](https://shengxinjing.cn/support.html)，一起上王者
+[欢迎加入前端学习](https://shengxinjing.cn/support.html)，一起上王者,交个朋友
 
 ## 下毒手法
 
 最朴实无法的下毒手法就是直接替换函数，比如evil.js中，给JSON.stringify下毒了，把里面的I换成了l ，每周日prmise的then方法有10%的概率不触发，只有周日能触发着实有点损了
-
 
 
 ```js
@@ -146,6 +145,7 @@ console.log( sr.evaluate(`JSON.stringify({name:'Illl'})`) )
 ```js
 
 !(global => { 
+  // Object.freeze(global.JSON)
   ;['JSON','Date'].forEach(n=>Object.freeze(global[n]))
   ;['Promise','Array'].forEach(n=>Object.freeze(global[n].prototype))
 })((0, eval)('this'))
@@ -161,7 +161,7 @@ console.log(JSON.stringify({name:'Illl'}))
 ```
 
 ## 备份检测
-还有一个很简单的方法，我们可以在项目启动的一开始，就备份一些重要的函数，比如Promise，Array原型链的方法，JSON.stringify、fetch、localstorage.getItem等方法, 然后在需要的时候,运行检测函数, 判断`Promise.prototype.then`和我们备份的是否相等，就可以甄别出原型链有没有被污染 ,我真是一个小机灵
+还有一个很简单的方法，实用性和兼容性都适中，我们可以在项目启动的一开始，就备份一些重要的函数，比如Promise，Array原型链的方法，JSON.stringify、fetch、localstorage.getItem等方法, 然后在需要的时候,运行检测函数, 判断`Promise.prototype.then`和我们备份的是否相等，就可以甄别出原型链有没有被污染 ,我真是一个小机灵
 
 首先我们要备份相关函数，由于我们需要检查的不是很多，就不需要对window进行遍历了，指定几个重要的api函数，都存在了`_snapshots`对象里
 
@@ -216,9 +216,9 @@ console.log(JSON.stringify({name:'Illl'}))
 ![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-19-28.png)
 
 
-然后我们在global上注册一个检测函数`checkNative`就可以啦，存储在_snapshot和_prototype里的内容，嘎嘎遍历出来，和当前运行时获取的JSON，Promise.prototype.then对比就可以啦， 还可以加一个reset参数，直接把污染的函数还原回去
+然后我们在global上注册一个检测函数`checkNative`就可以啦，存储在_snapshot和_prototype里的内容，嘎嘎遍历出来，和当前运行时获取的JSON，Promise.prototype.then对比就可以啦，而且我们有了备份， 还可以加一个reset参数，直接把污染的函数还原回去
 
-代码比较粗糙，大家凑合看，函数也就两层嵌套，直接暴力循环 ，欢迎有志之士优化
+代码比较粗糙，大家凑合看，函数也就两层嵌套，不整递归了，直接暴力循环 ，欢迎有志之士优化
 
 
 ```js
