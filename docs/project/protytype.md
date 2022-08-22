@@ -9,6 +9,8 @@
 
 今天我们来讨论一下，如果你作为项目的负责人，如何甄别这种代码下毒
 
+[欢迎加入前端学习](https://shengxinjing.cn/support.html)，一起上王者
+
 ## 下毒手法
 
 最朴实无法的下毒手法就是直接替换函数，比如evil.js中，给JSON.stringify下毒了，把里面的I换成了l ，每周日prmise的then方法有10%的概率不触发，只有周日能触发着实有点损了
@@ -299,4 +301,11 @@ console.log('checkNative重置了',JSON.stringify(obj))
 </script>
 ```
 ![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-19-46.png)
+
 ## 总结
+
+好像没啥总结得了，祝大家天天开心，做一个开心的程序员，回见
+
+[代码在Github](https://github.com/course-dasheng/check-native/tree/main)
+
+[在线环境在StackBlitz](https://stackblitz.com/edit/web-platform-72jjnl?devToolsHeight=60&file=index.html)
