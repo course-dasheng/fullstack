@@ -218,7 +218,8 @@ console.log(JSON.stringify({name:'Illl'}))
 })((0, eval)('this'))
 
 ```
-![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-15-33.png)
+![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-19-28.png)
+
 
 然后我们在global上注册一个检测函数`checkNative`就可以啦，存储在_snapshot和_prototype里的内容，嘎嘎遍历出来，和当前运行时获取的JSON，Promise.prototype.then对比就可以啦， 还可以加一个reset参数，直接把污染的函数还原回去
 
@@ -297,5 +298,5 @@ checkNative(true)
 console.log('checkNative重置了',JSON.stringify(obj)) 
 </script>
 ```
-![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-15-52.png)
+![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-19-46.png)
 ## 总结
