@@ -1,5 +1,9 @@
 # 原型链污染 Evil.js 怎么检测
 
+[视频移步B站](https://www.bilibili.com/video/BV1fe4y1o7kV)
+
+<iframe src="//player.bilibili.com/player.html?aid=557362104&bvid=BV1fe4y1o7kV&cid=811637597&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 最近`Evil.js`被讨论的很多，项目介绍如下
 ![](https://cdn.jsdelivr.net/gh/course-dasheng/fullstack/docs/public/2022-08-22-16-17-24.png)
 
@@ -13,7 +17,7 @@
 
 ## 下毒手法
 
-最朴实无法的下毒手法就是直接替换函数，比如evil.js中，给JSON.stringify下毒了，把里面的I换成了l ，每周日prmise的then方法有10%的概率不触发，只有周日能触发着实有点损了, 并且npm的报名就叫`lodash-utils`，看起来确实是个正经库，结果被下毒
+最朴实无华的下毒手法就是直接替换函数，比如evil.js中，给JSON.stringify下毒了，把里面的I换成了l ，每周日prmise的then方法有10%的概率不触发，只有周日能触发着实有点损了, 并且npm的报名就叫`lodash-utils`，看起来确实是个正经库，结果被下毒
 
 
 ```js
