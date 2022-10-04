@@ -36,7 +36,10 @@ export default {
       { text: '前端源码漫游记', link: 'https://fesource.netlify.app/' },
     ],
     socialLinks: [
+      { icon: 'discord', link: 'https://discord.gg/V3ZHdnZErY' },
       { icon: 'github', link: 'https://github.com/course-dasheng/fullstack' },
+      { icon: 'twitter', link: 'https://twitter.com/shengxj1' },
+
     ],
     sidebar: {
       '/': [
