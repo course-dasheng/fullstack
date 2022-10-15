@@ -2,15 +2,15 @@
 layout: home
 sidebar: false
 
-title: 项目实战章节 
+title: 前端架构指南 
 titleTemplate: 一个好的项目应该具备的模块教程
 
 hero:
-  name: 项目实战文档
+  name: 前端架构指南
   text: 企业级项目实战的模块
   tagline: 如何做出项目亮点
   image:
-    src: https://cdn.jsdelivr.net/gh/shengxinjing/static/work.png
+    src: https://cdn.jsdelivr.net/gh/shengxinjing/static/work.svg
     alt: work
   actions:
     - theme: brand
