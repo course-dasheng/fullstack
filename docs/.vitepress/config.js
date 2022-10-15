@@ -33,9 +33,8 @@ export default {
       { text: 'Vue', link: '/vue/' },
       { text: 'React', link: '/react/' },
       { text: 'Nodejs', link: '/node/' },
-      { text: '前端源码漫游', link: 'https://fesource.netlify.app/' },
-      { text: '前端刷题', link: 'https://fullstack-challenges.netlify.app/' },
-      
+      { text: '前端源码漫游', link: 'https://source-tour.netlify.app/' },
+      { text: '面试刷题', link: 'https://fullstack-challenges.netlify.app/' },
     ],
     socialLinks: [
       { icon: 'discord', link: 'https://discord.gg/V3ZHdnZErY' },
